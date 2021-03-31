@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel='stylesheet' href='./tipcalc.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class='mainContainer'>
@@ -27,25 +29,25 @@
                 <div class='mainDigitsContainer'>       
                     <div class='digitsContainer1'>
                         <div class='operand1'>
-                            <img src='./badservice.webp' onClick='badTip()' id='plus' width='200px'>
-                            Bad Service
+                            <img src='./badservice.webp' onClick='badTip()' id='plus' >
+                            
                             
                         </div>
                         <div class='operand2'>
-                            <img src='./okservice.webp' onClick='okTip()' id='subtract' width='200px'>
-                            Ok Service
+                            <img src='./okservice.webp' onClick='okTip()' id='subtract' >
+                            
                             
                         </div>
                     </div>
                     <div class='digitsContainer2'>
                         <div class='operand3'>
-                            <img src='./goodservice.webp' onClick='goodTip()' id='divide' width='200px'>
-                            Good Service
+                            <img src='./goodservice.webp' onClick='goodTip()' id='divide' >
+                             
                             
                         </div>
                         <div class='operand4'>
-                            <img src='./exceptionalservice.webp' onClick='exceptionalTip()' id='times' width='200px'>
-                            Exceptional Service
+                            <img src='./exceptionalservice.webp' onClick='exceptionalTip()' id='times' >
+                            
                             
                         </div>
                     </div> 
@@ -132,7 +134,7 @@ function badTip (){
     const field3 = document.createElement('li')
     field2.append(field3)
     const sum = Number(total) + Number(addTip)
-    field3.append(`We suggest you tip your server ${addTip.toFixed(2)} brining your total to ${sum.toFixed(2)}`)
+    field3.append(`POOR SERVICE?? TIP HER ${addTip.toFixed(2)} brining your total to ${sum.toFixed(2)}`)
     
 }
 function okTip (){
@@ -166,7 +168,7 @@ function exceptionalTip (){
     const field3 = document.createElement('li')
     field2.append(field3)
     const sum = Number(total) + Number(addTip)
-    field3.append(`We suggest you tip your server ${addTip.toFixed(2)} brining your total to ${sum.toFixed(2)}`)
+    field3.append(`GREAT SERVICE? Tip big! ${addTip.toFixed(2)} brining your total to ${sum.toFixed(2)}`)
 }
 
 
