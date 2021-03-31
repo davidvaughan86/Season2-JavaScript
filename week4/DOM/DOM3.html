@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class='mainContainer'>
+
+        <h1>dom practice 2</h1>
+
+        <label for='number'>number
+
+        </label>
+        <input onchange='displayValue()' class='input' name='number' >
+
+        <button class='button'>Submit
+       
+        </button>
+        <h4>your number is</h4>
+        <p class='displayNumber'></p>
+
+
+
+
+
+    </div>
+</body>
+
+<script>
+    // const displayNumber = document.querySelector('.input')
+
+    // const button = document.querySelector('.button')
+    // button.addEventListener('click', function () {
+        
+    // })
+
+    function displayValue () {
+        const displayNumber = document.querySelector('.input').value
+        console.log(displayNumber)
+        const number = document.querySelector('.displayNumber')
+        
+        // number.innerText = displayNumber
+        const mainContainer = document.querySelector('.mainContainer')
+        const newDiv = document.createElement('div')
+        mainContainer.append(newDiv)
+
+
+        const title = document.createElement('h1')
+        title.innerText='LIST OF NUMBERS'
+        title.setAttribute=('type', 'hidden')
+        
+        newDiv.append(title)
+       
+        newDiv.append(displayNumber)
+        
+    }
+displayValue()
+
+
+// const number = document.getElementsByClassName('.displayNumber')
+// displayNumber.innerText = number
+
+
+
+    
+</script>
+</html>

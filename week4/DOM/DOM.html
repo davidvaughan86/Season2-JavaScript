@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id='mainContainer'>
+    <button class='addList' >Submit</button>
+    <h1 id='mainHeader'> DOM 101</h1>
+    <ul id='list'>
+        
+        <li class='listItem1'>blue</li>
+        <li class='listItem'>red</li>
+        <li class='listItem'>yellow</li>
+        <li class='listItem'>green</li>
+        <li class='listItem1'>purple</li>
+
+    </ul>
+    <input class='listInput' type='text'/>
+    </div>
+</body>
+<script>
+    //grabbing by the ID
+    const heading = document.getElementById('mainHeader')
+    console.log(heading.innerText)
+    
+    
+    heading.innerText = 'he is how old?'
+    console.log(heading.innerText)
+    heading.style.color='pink'
+
+    // create a new list with createElement('li')
+    const newListItem = document.createElement('li')
+    // add text to the document with dot notation
+    newListItem.innerText = 'returns'
+    console.log(newListItem)
+
+    // grab the element by its ID
+    const list = document.getElementById('list')
+    console.log(list)
+    // using dot notation on the element ID name to append a child
+    list.append(newListItem)
+
+    // creating two new elements div and p
+    const newDiv = document.createElement('div')
+    const newPara = document.createElement('p')
+    // appened the child to the parents with dot notation
+    newDiv.append(newPara)
+    newPara.innerText = 'hello this is working'
+    // grab the div to target by the ID
+    const root = document.getElementById('mainContainer')
+    // use append to attach the child to the grabbed element by its varible name
+    mainContainer.append(newDiv)
+
+    const newInput = document.createElement('form')
+   
+    ('form').attr({type:'text'}).appendTo('newDiv')
+
+
+
+    // const list = document.getElementById('list')
+    // console.log(list)
+    // const listItem = document.getElementsByClassName('listItem')
+    // console.log(listItem)
+
+
+    // const lastListItem1 = document.querySelector('.listItem1')
+
+    // const lastListItem2 = document.querySelectorAll('.listItem')
+    // console.log(lastListItem2)
+
+    // const holder = lastListItem2
+    // console.log(holder)
+
+
+    
+</script>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id='root' >
+
+
+
+
+
+
+
+
+    </div>
+</body>
+<script>
+const root = document.getElementById('root')
+const newDiv = document.createElement('div')
+const newList = document.createElement('ul')
+const newItems1 = document.createElement('li')
+const newItems2 = document.createElement('li')
+const newItems3 = document.createElement('li')
+const newItems4 = document.createElement('li')
+newItems1.append('money')
+newItems2.append('car')
+newItems3.append('movie')
+newItems4.append('star')
+
+const newInput = document.createElement('input')
+newInput.setAttribute('type', 'text')
+const newRadio = document.createElement('input')
+newRadio.setAttribute('type', 'radio')
+root.append(newDiv)
+newDiv.append(newList)
+
+newList.append(newItems1)
+newList.append(newItems2)
+newList.append(newItems3)
+newList.append(newItems4)
+
+newDiv.append(newInput)
+newDiv.append(newRadio)
+
+
+
+</script>
+</html>
