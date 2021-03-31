@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    color: white;
 }
 
 .mainContainer {
@@ -175,12 +176,10 @@ button {
 .field1{
     display: flex;
     height: 100%;
-    width:50%;
+    width:100%;
     font-size: 30px;
 }
 .field2{
-    display: flex;
-    height:100%;
-    width:50%;
+    
     font-size: 30px;
 }

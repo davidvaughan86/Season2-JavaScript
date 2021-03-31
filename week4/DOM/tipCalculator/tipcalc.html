@@ -14,14 +14,16 @@
         </div>
         <!-- <div class='field'></div> -->
         <div class='tipSuggestions'>
-
+            <ul class='field2'>
+                
+            </ul>
         </div>
         <div class='tipCalculator' name='tipCalculator'>
        
-            <form class='digits' name='form'>
+            <div class='digits' name='form'>
                 <input type='text' class='field1' name='field1'>
-                <h1 class='field2'></h1>
-            </form>
+                
+            </div>
                 <div class='mainDigitsContainer'>       
                     <div class='digitsContainer1'>
                         <div class='operand1'>
@@ -127,26 +129,44 @@ function badTip (){
     const addTip = total *.10
     console.log(addTip)
     const field2=document.querySelector('.field2')
-    field2.append(addTip)
+    const field3 = document.createElement('li')
+    field2.append(field3)
+    const sum = Number(total) + Number(addTip)
+    field3.append(`We suggest you tip your server ${addTip} brining your total to ${sum}`)
     
 }
 function okTip (){
     const total = document.querySelector('.field1').value;
-    console.log(total)
-    const addTip = total *.15
-    console.log(addTip)
+    console.log(total.toFixed(2))
+    const addTip = Number(total) * Number(.15)
+    console.log(addTip.toFixed(2))
+    const field2=document.querySelector('.field2')
+    const field3 = document.createElement('li')
+    field2.append(field3)
+    const sum = total + addTip
+    field3.append(`We suggest you tip your server ${Number(addTip).toFixed(2)} brining your total to ${Math.round(sum)}`)
 }
 function goodTip (){
     const total = document.querySelector('.field1').value;
     console.log(total)
     const addTip = total *.20
     console.log(addTip)
+    const field2=document.querySelector('.field2')
+    const field3 = document.createElement('li')
+    field2.append(field3)
+    const sum = Number(total) + Number(addTip)
+    field3.append(`We suggest you tip your server ${addTip} brining your total to ${sum}`)
 }
 function exceptionalTip (){
     const total = document.querySelector('.field1').value;
     console.log(total)
     const addTip = total *.30
     console.log(addTip)
+    const field2=document.querySelector('.field2')
+    const field3 = document.createElement('li')
+    field2.append(field3)
+    const sum = Number(total) + Number(addTip)
+    field3.append(`We suggest you tip your server ${addTip} brining your total to ${sum}`)
 }
 
 
