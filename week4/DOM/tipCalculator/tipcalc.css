@@ -1,6 +1,7 @@
 body {
     background-color: black;
     color: white;
+    font-family: 'Berkshire Swash', cursive;
 }
 
 .mainContainer {
@@ -135,32 +136,38 @@ button {
     grid-area: tipSuggestions;
     background-color: orange;
     border: 10px solid white;
-    background-image: url('./parallax.jpg');
+    background-image: url('./lidya-nada--iX-0JI8-0Y-unsplash.jpg');
+    background-size: contain;
 }
 
 .tipCalculator {
     grid-area: tipCalculator;
     background-color: purple;
     border: 10px solid white;
-    background-image: url('./bg-small.jpg');
+    background-image: url('./sharon-mccutcheon-_qS0EQGn6qg-unsplash.jpg');
+    background-size: contain;
 }
 .info {
     grid-area: info;
-    background-image: url('./parallax.jpg');
+    background-image: url('./patrick-fore-NnTQBkBkU9g-unsplash.jpg');
+    background-size: contain;
     border: 10px solid white;
 }
 .notes {
     grid-area: notes;
     background-color:orange;
     border: 10px solid white;
-    background-image: url('./parallax.jpg');
+    background-image: url('./lidya-nada--iX-0JI8-0Y-unsplash.jpg');
+    background-size: contain;
 }
 
 .history {
     grid-area: history;
     background-color:beige;
     border: 10px solid white;
-    background-image: url('./parallax.jpg');
+    background-image: url('./patrick-fore-ZmH0g1ievTg-unsplash.jpg');
+    background-size: contain;
+    
 }
 
 .input {
@@ -182,4 +189,6 @@ button {
 .field2{
     
     font-size: 30px;
+    background-color: black;
+    opacity: 1;
 }

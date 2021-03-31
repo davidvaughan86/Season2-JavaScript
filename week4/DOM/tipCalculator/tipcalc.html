@@ -132,19 +132,19 @@ function badTip (){
     const field3 = document.createElement('li')
     field2.append(field3)
     const sum = Number(total) + Number(addTip)
-    field3.append(`We suggest you tip your server ${addTip} brining your total to ${sum}`)
+    field3.append(`We suggest you tip your server ${addTip.toFixed(2)} brining your total to ${sum.toFixed(2)}`)
     
 }
 function okTip (){
     const total = document.querySelector('.field1').value;
-    console.log(total.toFixed(2))
+    console.log(total)
     const addTip = Number(total) * Number(.15)
-    console.log(addTip.toFixed(2))
+    console.log(addTip)
     const field2=document.querySelector('.field2')
     const field3 = document.createElement('li')
     field2.append(field3)
-    const sum = total + addTip
-    field3.append(`We suggest you tip your server ${Number(addTip).toFixed(2)} brining your total to ${Math.round(sum)}`)
+    const sum = Number(total) + Number(addTip)
+    field3.append(`We suggest you tip your server ${addTip.toFixed(2)} brining your total to ${sum.toFixed(2)}`)
 }
 function goodTip (){
     const total = document.querySelector('.field1').value;
@@ -155,7 +155,7 @@ function goodTip (){
     const field3 = document.createElement('li')
     field2.append(field3)
     const sum = Number(total) + Number(addTip)
-    field3.append(`We suggest you tip your server ${addTip} brining your total to ${sum}`)
+    field3.append(`We suggest you tip your server ${addTip.toFixed(2)} brining your total to ${sum.toFixed(2)}`)
 }
 function exceptionalTip (){
     const total = document.querySelector('.field1').value;
@@ -166,7 +166,7 @@ function exceptionalTip (){
     const field3 = document.createElement('li')
     field2.append(field3)
     const sum = Number(total) + Number(addTip)
-    field3.append(`We suggest you tip your server ${addTip} brining your total to ${sum}`)
+    field3.append(`We suggest you tip your server ${addTip.toFixed(2)} brining your total to ${sum.toFixed(2)}`)
 }
 
 
